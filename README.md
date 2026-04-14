@@ -1,126 +1,113 @@
-skill_xchange1
-SkillXchange – Flutter Skill Exchange Application
+📱 SkillXchange Flutter Application
 
-📱 Project Overview
+SkillXchange is a Flutter-based mobile application that allows users to learn, teach, and connect by exchanging skills. This project demonstrates the integration of a public REST API, JSON parsing, and dynamic UI rendering using Flutter.
 
-SkillXchange is a mobile application developed using Flutter that enables users to exchange skills without monetary transactions. The platform connects individuals who want to teach a skill with those who want to learn a skill, encouraging collaborative learning and community engagement.
+---
 
-The application allows users to create profiles, list their offered skills, specify skills they want to learn, and find matching users for skill exchange.
+🚀 Features
 
-🎯 Objective
+- 🔗 Fetch data from a public REST API
+- 📦 Parse JSON data into Dart models
+- 📋 Display users using ListView
+- 💬 Navigate to a simple Chat Screen
+- 🎨 Clean and responsive UI
+- ⚡ Fast and lightweight Flutter app
 
-The main objective of this project is to create a peer-to-peer learning platform that enables users to share knowledge and develop new skills without paying for expensive courses.
+---
 
-✨ Key Features
+🌐 API Used
 
-👤 User Authentication
+This app uses the following public API:
 
-User registration and login
+https://jsonplaceholder.typicode.com/users
 
-Secure authentication using Firebase
+---
 
-🧑‍💻 User Profile
+🛠️ Tech Stack
 
-Add personal information
+- Flutter
+- Dart
+- HTTP Package
+- REST API Integration
 
-List skills offered
-
-List skills wanted
-
-🔍 Skill Matching
-
-Match users based on complementary skills
-
-Display users who can teach the required skill
-
-💬 Chat System
-
-Real-time messaging between matched users
-
-Request and accept skill exchange
-
-⭐ Rating System
-
-Users can rate each other after completing a session
-
-Helps build trust within the community
-
-🛠️ Technologies Used
-
-Technology Purpose
-
-Flutter Mobile app development Dart Programming language Firebase Authentication User login & signup Cloud Firestore Database for storing user data Firebase Storage Storing profile images REST API Fetching skill suggestions
+---
 
 📂 Project Structure
 
-lib/ │ ├── main.dart │ ├── models/ │ └── user_model.dart │ ├── services/ │ ├── auth_service.dart │ ├── firestore_service.dart │ └── api_service.dart │ ├── screens/ │ ├── login_screen.dart │ ├── register_screen.dart │ ├── home_screen.dart │ ├── profile_screen.dart │ └── chat_screen.dart │ └── widgets/ └── skill_card.dart
+lib/
+ └── main.dart
 
-🗄️ Database Structure (Firestore)
+(All code is implemented in a single file for simplicity.)
 
-Users Collection
+---
 
-users └── userId ├── name ├── email ├── skills_offered [ ] ├── skills_wanted [ ] ├── rating └── location
+📦 Dependencies
 
-Chats Collection
+Add this in your "pubspec.yaml":
 
-chats └── chatId ├── participants ├── messages │ ├── sender │ ├── text │ └── timestamp
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^0.13.6
 
-🔄 Application Workflow
+---
 
-User registers or logs into the application.
+▶️ How to Run the Project
 
-User creates a profile and adds skills they offer and want to learn.
+1. Clone the repository:
 
-The application searches for users with complementary skills.
+git clone https://github.com/your-username/skillexchange.git
 
-Matched users can communicate using the in-app chat feature.
+2. Navigate to project folder:
 
-After a session, users can rate each other.
+cd skillexchange
 
-🚀 Installation Guide
+3. Get dependencies:
 
-Clone the Repository
-git clone https://github.com/siddhigondaliya/SkillXchange
-
-Navigate to Project Folder
-cd skillxchange
-
-Install Dependencies
 flutter pub get
 
-Run the Application
+4. Run the app:
+
 flutter run
 
-📊 Future Enhancements
+---
 
-AI-based skill recommendation system
+📖 How It Works
 
-Location-based user matching
+1. App sends a GET request to the API
+2. Receives JSON response
+3. Converts JSON into Dart objects
+4. Displays data in a ListView
+5. On button click → navigates to chat screen
 
-Video call integration for remote learning
+---
 
-Skill verification badges
+🎯 Learning Outcomes
 
-Session scheduling system
+- Understanding REST API integration in Flutter
+- Working with asynchronous programming
+- JSON parsing in Dart
+- Navigation between screens
+- Building UI with ListView
 
-🎓 Educational Value
+---
 
-This project helps students understand:
+🔮 Future Enhancements
 
-Flutter mobile app development
+- 👤 Add user profile images
+- 🔍 Search & filter skills
+- 🔐 Firebase Authentication
+- 💬 Real-time chat using Firebase
+- 📊 GridView UI option
 
-Firebase authentication and database
-
-REST API integration
-
-JSON data parsing
-
-UI design using Material Design
+---
 
 👨‍💻 Author
 
-Student Name: Gondaliya Siddhi
+Developed as a Flutter learning project.
 
-Course: Computer Science / Information Technology
+---
 
-Project Type: Academic / College Project
+📄 License
+
+This project is for educational purposes only.
