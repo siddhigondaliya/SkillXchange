@@ -13,15 +13,6 @@ SkillXchange is a Flutter-based mobile application that allows users to learn, t
 - 🎨 Clean and responsive UI
 - ⚡ Fast and lightweight Flutter app
 
----
-
-🌐 API Used
-
-This app uses the following public API:
-
-https://jsonplaceholder.typicode.com/users
-
----
 
 🛠️ Tech Stack
 
@@ -104,7 +95,7 @@ flutter run
 
 👨‍💻 Author
 
-Developed as a Flutter learning project.
+Gondaliya Siddhi 
 
 ---
 
